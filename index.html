@@ -6,8 +6,86 @@
     <link rel="shortcut icon" href="./pexels-polina-tankilevitch-6927360.jpg" type="image/x-icon">
 
     <title>Basic Calculator</title>
+    <style>
+        .body {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        #main-div {
+            text-align: center;
+            align-items: center;
+            border: 2px solid rgb(139, 88, 0);
+            background-color: rgb(85, 85, 163);
+            
+         }
+        #equal {
+            padding-top: 20px;
+            text-align: center;
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .spacing {
+           
+            padding-right: 7px;
+            padding-top: 20px;
+            height: 40px;
+            width: 30px;
+        }
+        #off {
+            font-size: small;
+            font-weight: lighter;
+        }
+        .input {
+            width: 205px;
+            height: 50px;
+            
+        }
+        .table {
+            text-align: center;
+        }
+        
+    </style>
 </head>
-<body>
-    
+<body class="body">
+    <div id="main-div">
+        <input class="input" type="text">
+    <table class="table">
+       
+        <tr >
+            <td class="spacing"><input type="button" value="7"></td>
+            <td class="spacing"><input type="button" value="8"></td>
+            <td class="spacing"><input type="button" value="9"></td>
+            <td class="spacing"><input type="button" value="+"></td>
+            <td class="spacing"><input type="button" value="ON"></td>
+            
+        </tr>
+        <tr>
+            <td class="spacing"><input type="button" value="4"></td>
+            <td class="spacing"><input type="button" value="5"></td>
+            <td class="spacing"><input type="button" value="6"></td>
+            <td class="spacing"><input type="button" value="–"></td>
+            <td class="spacing"><input id="off" type="button" value="OFF"></td>
+        </tr>
+        <tr>
+            <td class="spacing"><input type="button" value="1"></td>
+            <td class="spacing"><input type="button" value="2"></td>
+            <td class="spacing"><input type="button" value="3"></td>
+            <td class="spacing"><input type="button" value="×"></td>
+            <td class="spacing"><input type="button" value="←"></td>
+            
+        </tr>
+           
+        <tr>
+            <td class="spacing"><input type="button" value="C"></td>
+            <td class="spacing"><input type="button" value="0"></td>
+            <td class="spacing"><input type="button" value="."></td>
+            <td class="spacing"><input type="button" value="÷"></td>
+            <td ><input id="equal" type="button" value="="></td>
+            
+        </tr>
+    </table>
+    </div>
 </body>
 </html>
